@@ -124,3 +124,24 @@ Run the benchmark with:
 
 Next: repeat measurements and investigate CPU utilization
 before selecting a concurrency limit.
+
+## Repeated concurrency tests
+
+Three additional runs measured 50 requests at each concurrency
+level: 600 measured requests succeeded, with zero failures.
+
+| Concurrency | Throughput range (requests/sec) | P95 latency range (ms) |
+|---|---:|---:|
+| 1 | 34.04-39.18 | 36.56-39.38 |
+| 2 | 45.27-48.09 | 46.20-59.48 |
+| 4 | 53.58-60.07 | 76.48-86.09 |
+| 8 | 45.58-59.79 | 147.18-220.85 |
+
+Ranges show the minimum and maximum per-run results.
+Eight concurrent requests had higher P95 latency than four
+in every run, while its throughput advantage varied.
+
+Decision: investigate concurrency four as a candidate for
+further testing. No server concurrency limit has been applied.
+Longer tests, varied inputs, and CPU measurements are needed
+before setting an operating limit.
