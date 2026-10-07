@@ -145,3 +145,7 @@ Decision: investigate concurrency four as a candidate for
 further testing. No server concurrency limit has been applied.
 Longer tests, varied inputs, and CPU measurements are needed
 before setting an operating limit.
+
+## Automated API validation
+Run: .\.venv\Scripts\python.exe validate_api.py (with the API server running).
+Verified October 7, 2026: 9/9 checks passed, covering health, prediction response fields, and invalid inputs. These checks verify API behavior, not overall model accuracy.
