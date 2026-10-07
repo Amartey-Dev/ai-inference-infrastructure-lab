@@ -149,3 +149,9 @@ before setting an operating limit.
 ## Automated API validation
 Run: .\.venv\Scripts\python.exe validate_api.py (with the API server running).
 Verified October 7, 2026: 9/9 checks passed, covering health, prediction response fields, and invalid inputs. These checks verify API behavior, not overall model accuracy.
+
+## Environment reproduction check
+
+Verified October 7, 2026 on Windows with Python 3.13.3: created a new .venv-repro environment, installed requirements.txt using the PyTorch CPU package index, and confirmed pip check reported no broken requirements. Started the API using this environment and passed all 9 automated API checks.
+
+Scope: tested on the same computer and repository using the existing model cache. A fresh clone, a separate machine, and an uncached model download have not yet been verified.
