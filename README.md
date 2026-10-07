@@ -1,42 +1,18 @@
-# ai-inference-infrastructure-lab
-An AI inference infrastructure lab exploring deployment, performance, monitoring, and reliability.
-# AI Inference Infrastructure Lab
+## Local validation
 
-## Objective
-Build, deploy, and evaluate an AI inference service, focusing on
-performance, reliability, monitoring, and capacity planning.
+The API serves a pretrained DistilBERT sentiment model on CPU.
 
-## Key Question
-How much traffic can the service support while meeting defined
-response-time and error-rate targets?
+| Test input | Expected result | Observed result |
+|---|---|---|
+| I really enjoyed this movie. | 200 / POSITIVE | Passed |
+| This movie was terrible and boring. | 200 / NEGATIVE | Passed |
+| Empty text | 422 validation error | Passed |
 
-## Planned Implementation
-- Serve a small pretrained model through a Python API.
-- Package the application in a Docker container.
-- Measure throughput, p50/p95 latency, and error rates.
-- Monitor service health and resource usage.
-- Test service failures and recovery.
-- Document infrastructure decisions and tradeoffs.
+Sample inference times were 169.38 ms for the positive request
+and 32.9 ms for the negative request. These are individual
+measurements, not a performance benchmark.
 
-## Project Milestones
-1. Build and validate the local inference API.
-2. Create a repeatable container deployment.
-3. Establish a load-testing performance baseline.
-4. Add monitoring and run recovery experiments.
-5. Evaluate an optional Azure deployment.
-
-## Success Criteria
-- Inference requests return valid model predictions.
-- Another user can reproduce the setup using the documentation.
-- Performance results include hardware and test conditions.
-- A failure experiment records recovery time and request failures.
-- Conclusions are supported by measured results.
-
-Performance targets will be set before load testing.
-
-## Program Management
-Track scope, milestones, dependencies, risks, and release criteria
-using GitHub Issues and project documentation.
-
-## Current Status
-Repository initialized. Implementation has not started.
+Endpoints:
+- GET /health: service health check
+- POST /predict: sentiment prediction with model score and inference timing
+- /docs: interactive API documentation
