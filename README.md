@@ -95,3 +95,32 @@ needed for stronger comparisons.
 
 The API and benchmark client ran on the same machine.
 Package versions are recorded in requirements.txt.
+
+## Concurrent CPU benchmark
+
+Method: 5 sequential warm-up requests, followed by 50 measured
+requests at each client concurrency level. All requests used
+the same sentence. The API and client ran on the same machine.
+
+| Client concurrency | Successful | Failed | Requests/sec | Mean latency (ms) | P95 latency (ms) |
+|---|---:|---:|---:|---:|---:|
+| 1 | 50 | 0 | 42.36 | 23.50 | 33.20 |
+| 2 | 50 | 0 | 57.08 | 34.48 | 39.73 |
+| 4 | 50 | 0 | 63.35 | 62.02 | 71.24 |
+| 8 | 50 | 0 | 59.20 | 132.91 | 185.79 |
+
+Four concurrent requests achieved the highest throughput in
+this run. Increasing concurrency to eight reduced throughput
+and increased latency. This suggests diminishing returns
+under these test conditions; the bottleneck has not been isolated.
+
+These are short local tests, not production capacity estimates.
+Latency statistics include successful requests only.
+Individual request measurements are saved in the results folder.
+
+Run the benchmark with:
+
+    .\.venv\Scripts\python.exe benchmark_concurrent.py
+
+Next: repeat measurements and investigate CPU utilization
+before selecting a concurrency limit.
