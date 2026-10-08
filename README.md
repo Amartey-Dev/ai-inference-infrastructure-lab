@@ -155,3 +155,11 @@ Verified October 7, 2026: 9/9 checks passed, covering health, prediction respons
 Verified October 7, 2026 on Windows with Python 3.13.3: created a new .venv-repro environment, installed requirements.txt using the PyTorch CPU package index, and confirmed pip check reported no broken requirements. Started the API using this environment and passed all 9 automated API checks.
 
 Scope: tested on the same computer and repository using the existing model cache. A fresh clone, a separate machine, and an uncached model download have not yet been verified.
+
+## Readiness checks
+
+Verified October 8, 2026: all 10 automated API checks passed, including GET /ready returning HTTP 200 with model_loaded set to true.
+
+A separate Python process called the readiness function without loading the model and verified status code 503 with {"status": "not_ready", "model_loaded": false}.
+
+Scope: readiness checks whether the model object is present. It does not verify inference accuracy or available capacity. The API finishes loading the model before accepting requests, so the 503 case was tested directly rather than through a startup HTTP request.

@@ -37,6 +37,14 @@ def check_health():
     require(status == 200, f"Expected HTTP 200, got {status}")
     require(body == {"status": "ok"}, f"Unexpected response: {body}")
 
+def check_ready():
+    status, body = call_api("/ready")
+    require(status == 200, f"Expected HTTP 200, got {status}")
+    require(
+        body == {"status": "ready", "model_loaded": True},
+        f"Unexpected readiness response: {body}",
+    )
+
 
 def check_prediction(text, expected_label):
     status, body = call_api("/predict", {"text": text})
@@ -77,6 +85,7 @@ def check_invalid(payload):
 def main():
     tests = [
         ("Health endpoint", check_health, ()),
+               ("Readiness endpoint", check_ready, ()),
         (
             "Positive prediction and response fields",
             check_prediction,
@@ -111,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+    

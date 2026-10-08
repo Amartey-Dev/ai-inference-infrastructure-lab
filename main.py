@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from time import perf_counter
 from typing import Annotated
-
+from fastapi.responses import JSONResponse
 from fastapi import FastAPI
 from pydantic import BaseModel, StringConstraints
 from transformers import pipeline
@@ -58,3 +58,16 @@ def predict(request: PredictionRequest):
         "model": MODEL_ID,
         "device": "cpu",
     }
+  
+
+
+@app.get("/ready")
+def ready():
+    model_loaded = getattr(app.state, "classifier", None) is not None
+    return JSONResponse(
+        status_code=200 if model_loaded else 503,
+        content={
+            "status": "ready" if model_loaded else "not_ready",
+            "model_loaded": model_loaded,
+        },
+    )
