@@ -163,3 +163,39 @@ Verified October 8, 2026: all 10 automated API checks passed, including GET /rea
 A separate Python process called the readiness function without loading the model and verified status code 503 with {"status": "not_ready", "model_loaded": false}.
 
 Scope: readiness checks whether the model object is present. It does not verify inference accuracy or available capacity. The API finishes loading the model before accepting requests, so the 503 case was tested directly rather than through a startup HTTP request.
+
+
+## CPU and memory measurement
+
+Measured October 8, 2026 using the local CPU inference API.
+
+Benchmark results: [Saved JSON](results/concurrency_20261008T043823896625Z.json)
+
+Each concurrency level attempted 50 requests after warm-up.
+
+| Concurrent requests | Requests/second | Mean latency (ms) | p95 latency (ms) |
+|---|---:|---:|---:|
+| 1 | 33.32 | 29.87 | 42.16 |
+| 2 | 45.98 | 43.01 | 53.39 |
+| 4 | 48.91 | 80.05 | 97.34 |
+| 8 | 52.81 | 146.64 | 176.79 |
+
+### API process resource readings
+
+Resource readings were collected using PowerShell Get-Process.
+
+| Measurement | Idle sample | Benchmark window |
+|---|---:|---:|
+| Measurement duration (seconds) | 6.32 | 6.35 |
+| CPU usage, with 100% representing one logical processor | 0.00% | 634.71% |
+| Working set at the end of the measurement (MiB) | 238.08 | 256.93 |
+
+CPU usage was calculated as the change in accumulated API process CPU time divided by elapsed wall-clock time, multiplied by 100.
+
+### Interpretation and limitations
+
+Increasing concurrency from 4 to 8 improved throughput by approximately 8%, while p95 latency increased by approximately 82%. This run demonstrates a throughput and response-time tradeoff.
+
+Resource measurements cover the API process only. The benchmark window includes warm-up and all concurrency levels; CPU usage is an average across that window, not a reading for each concurrency level. Memory readings are snapshots, not peak memory measurements.
+
+These short tests on one computer do not establish production capacity, sustained reliability, or a CPU bottleneck.

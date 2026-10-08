@@ -1,0 +1,1466 @@
+{
+  "timestamp_utc": "2026-10-08T04:38:23.895440+00:00",
+  "url": "http://127.0.0.1:8000/predict",
+  "text": "I really enjoyed this movie.",
+  "warmup_requests": 5,
+  "requests_per_test": 50,
+  "latency_scope": "Successful requests only",
+  "tests": [
+    {
+      "summary": {
+        "concurrency": 1,
+        "attempted": 50,
+        "successful": 50,
+        "failed": 0,
+        "elapsed_seconds": 1.5,
+        "successful_requests_per_second": 33.32,
+        "mean_latency_ms": 29.87,
+        "p95_latency_ms": 42.16
+      },
+      "requests": [
+        {
+          "request_id": 0,
+          "success": true,
+          "latency_ms": 26.202699984423816,
+          "inference_ms": 20.91,
+          "error": null
+        },
+        {
+          "request_id": 1,
+          "success": true,
+          "latency_ms": 62.47519998578355,
+          "inference_ms": 57.02,
+          "error": null
+        },
+        {
+          "request_id": 2,
+          "success": true,
+          "latency_ms": 28.84109999286011,
+          "inference_ms": 24.13,
+          "error": null
+        },
+        {
+          "request_id": 3,
+          "success": true,
+          "latency_ms": 32.66790002817288,
+          "inference_ms": 27.96,
+          "error": null
+        },
+        {
+          "request_id": 4,
+          "success": true,
+          "latency_ms": 42.16050001559779,
+          "inference_ms": 19.64,
+          "error": null
+        },
+        {
+          "request_id": 5,
+          "success": true,
+          "latency_ms": 27.650200005155057,
+          "inference_ms": 23.92,
+          "error": null
+        },
+        {
+          "request_id": 6,
+          "success": true,
+          "latency_ms": 26.678399997763336,
+          "inference_ms": 21.81,
+          "error": null
+        },
+        {
+          "request_id": 7,
+          "success": true,
+          "latency_ms": 24.79749999474734,
+          "inference_ms": 20.44,
+          "error": null
+        },
+        {
+          "request_id": 8,
+          "success": true,
+          "latency_ms": 27.355499973054975,
+          "inference_ms": 22.87,
+          "error": null
+        },
+        {
+          "request_id": 9,
+          "success": true,
+          "latency_ms": 25.053600023966283,
+          "inference_ms": 20.87,
+          "error": null
+        },
+        {
+          "request_id": 10,
+          "success": true,
+          "latency_ms": 24.531300005037338,
+          "inference_ms": 20.47,
+          "error": null
+        },
+        {
+          "request_id": 11,
+          "success": true,
+          "latency_ms": 39.18000002158806,
+          "inference_ms": 20.9,
+          "error": null
+        },
+        {
+          "request_id": 12,
+          "success": true,
+          "latency_ms": 24.851599999237806,
+          "inference_ms": 20.82,
+          "error": null
+        },
+        {
+          "request_id": 13,
+          "success": true,
+          "latency_ms": 25.046000024303794,
+          "inference_ms": 20.55,
+          "error": null
+        },
+        {
+          "request_id": 14,
+          "success": true,
+          "latency_ms": 23.35909998510033,
+          "inference_ms": 19.56,
+          "error": null
+        },
+        {
+          "request_id": 15,
+          "success": true,
+          "latency_ms": 26.253100018948317,
+          "inference_ms": 21.98,
+          "error": null
+        },
+        {
+          "request_id": 16,
+          "success": true,
+          "latency_ms": 25.210699997842312,
+          "inference_ms": 21.37,
+          "error": null
+        },
+        {
+          "request_id": 17,
+          "success": true,
+          "latency_ms": 36.82989999651909,
+          "inference_ms": 32.61,
+          "error": null
+        },
+        {
+          "request_id": 18,
+          "success": true,
+          "latency_ms": 24.894500034861267,
+          "inference_ms": 20.86,
+          "error": null
+        },
+        {
+          "request_id": 19,
+          "success": true,
+          "latency_ms": 25.080199993681163,
+          "inference_ms": 21.38,
+          "error": null
+        },
+        {
+          "request_id": 20,
+          "success": true,
+          "latency_ms": 24.842299986630678,
+          "inference_ms": 21.21,
+          "error": null
+        },
+        {
+          "request_id": 21,
+          "success": true,
+          "latency_ms": 25.58269997825846,
+          "inference_ms": 21.78,
+          "error": null
+        },
+        {
+          "request_id": 22,
+          "success": true,
+          "latency_ms": 24.069099978078157,
+          "inference_ms": 20.26,
+          "error": null
+        },
+        {
+          "request_id": 23,
+          "success": true,
+          "latency_ms": 29.183799983002245,
+          "inference_ms": 24.98,
+          "error": null
+        },
+        {
+          "request_id": 24,
+          "success": true,
+          "latency_ms": 23.9842000300996,
+          "inference_ms": 20.39,
+          "error": null
+        },
+        {
+          "request_id": 25,
+          "success": true,
+          "latency_ms": 25.80510004190728,
+          "inference_ms": 21.64,
+          "error": null
+        },
+        {
+          "request_id": 26,
+          "success": true,
+          "latency_ms": 24.576199997682124,
+          "inference_ms": 20.72,
+          "error": null
+        },
+        {
+          "request_id": 27,
+          "success": true,
+          "latency_ms": 39.24940002616495,
+          "inference_ms": 34.78,
+          "error": null
+        },
+        {
+          "request_id": 28,
+          "success": true,
+          "latency_ms": 26.99039998697117,
+          "inference_ms": 22.93,
+          "error": null
+        },
+        {
+          "request_id": 29,
+          "success": true,
+          "latency_ms": 28.2467000070028,
+          "inference_ms": 23.78,
+          "error": null
+        },
+        {
+          "request_id": 30,
+          "success": true,
+          "latency_ms": 32.39720000419766,
+          "inference_ms": 28.31,
+          "error": null
+        },
+        {
+          "request_id": 31,
+          "success": true,
+          "latency_ms": 32.5969000114128,
+          "inference_ms": 28.6,
+          "error": null
+        },
+        {
+          "request_id": 32,
+          "success": true,
+          "latency_ms": 34.416900016367435,
+          "inference_ms": 30.38,
+          "error": null
+        },
+        {
+          "request_id": 33,
+          "success": true,
+          "latency_ms": 27.12809998774901,
+          "inference_ms": 23.23,
+          "error": null
+        },
+        {
+          "request_id": 34,
+          "success": true,
+          "latency_ms": 28.82449998287484,
+          "inference_ms": 24.62,
+          "error": null
+        },
+        {
+          "request_id": 35,
+          "success": true,
+          "latency_ms": 28.4199999878183,
+          "inference_ms": 24.2,
+          "error": null
+        },
+        {
+          "request_id": 36,
+          "success": true,
+          "latency_ms": 29.17409996734932,
+          "inference_ms": 25.03,
+          "error": null
+        },
+        {
+          "request_id": 37,
+          "success": true,
+          "latency_ms": 76.83299999916926,
+          "inference_ms": 72.3,
+          "error": null
+        },
+        {
+          "request_id": 38,
+          "success": true,
+          "latency_ms": 37.32619999209419,
+          "inference_ms": 32.23,
+          "error": null
+        },
+        {
+          "request_id": 39,
+          "success": true,
+          "latency_ms": 37.83430001931265,
+          "inference_ms": 33.34,
+          "error": null
+        },
+        {
+          "request_id": 40,
+          "success": true,
+          "latency_ms": 24.980099988169968,
+          "inference_ms": 21.04,
+          "error": null
+        },
+        {
+          "request_id": 41,
+          "success": true,
+          "latency_ms": 22.679199988488108,
+          "inference_ms": 18.84,
+          "error": null
+        },
+        {
+          "request_id": 42,
+          "success": true,
+          "latency_ms": 27.31779997702688,
+          "inference_ms": 21.97,
+          "error": null
+        },
+        {
+          "request_id": 43,
+          "success": true,
+          "latency_ms": 24.844500003382564,
+          "inference_ms": 20.76,
+          "error": null
+        },
+        {
+          "request_id": 44,
+          "success": true,
+          "latency_ms": 26.408499979879707,
+          "inference_ms": 22.16,
+          "error": null
+        },
+        {
+          "request_id": 45,
+          "success": true,
+          "latency_ms": 26.811500021722168,
+          "inference_ms": 22.86,
+          "error": null
+        },
+        {
+          "request_id": 46,
+          "success": true,
+          "latency_ms": 27.364099980331957,
+          "inference_ms": 23.38,
+          "error": null
+        },
+        {
+          "request_id": 47,
+          "success": true,
+          "latency_ms": 24.734899983741343,
+          "inference_ms": 20.77,
+          "error": null
+        },
+        {
+          "request_id": 48,
+          "success": true,
+          "latency_ms": 25.836499989964068,
+          "inference_ms": 21.47,
+          "error": null
+        },
+        {
+          "request_id": 49,
+          "success": true,
+          "latency_ms": 25.801900017540902,
+          "inference_ms": 21.04,
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 2,
+        "attempted": 50,
+        "successful": 50,
+        "failed": 0,
+        "elapsed_seconds": 1.087,
+        "successful_requests_per_second": 45.98,
+        "mean_latency_ms": 43.01,
+        "p95_latency_ms": 53.39
+      },
+      "requests": [
+        {
+          "request_id": 0,
+          "success": true,
+          "latency_ms": 64.37699997331947,
+          "inference_ms": 55.2,
+          "error": null
+        },
+        {
+          "request_id": 1,
+          "success": true,
+          "latency_ms": 46.82960000354797,
+          "inference_ms": 40.32,
+          "error": null
+        },
+        {
+          "request_id": 2,
+          "success": true,
+          "latency_ms": 45.5286999931559,
+          "inference_ms": 37.02,
+          "error": null
+        },
+        {
+          "request_id": 3,
+          "success": true,
+          "latency_ms": 42.42140002315864,
+          "inference_ms": 36.87,
+          "error": null
+        },
+        {
+          "request_id": 4,
+          "success": true,
+          "latency_ms": 42.64639999018982,
+          "inference_ms": 37.13,
+          "error": null
+        },
+        {
+          "request_id": 5,
+          "success": true,
+          "latency_ms": 40.96499999286607,
+          "inference_ms": 35.65,
+          "error": null
+        },
+        {
+          "request_id": 6,
+          "success": true,
+          "latency_ms": 39.3919000052847,
+          "inference_ms": 34.0,
+          "error": null
+        },
+        {
+          "request_id": 7,
+          "success": true,
+          "latency_ms": 44.819500006269664,
+          "inference_ms": 39.39,
+          "error": null
+        },
+        {
+          "request_id": 8,
+          "success": true,
+          "latency_ms": 43.52170001948252,
+          "inference_ms": 38.97,
+          "error": null
+        },
+        {
+          "request_id": 9,
+          "success": true,
+          "latency_ms": 45.05509999580681,
+          "inference_ms": 40.15,
+          "error": null
+        },
+        {
+          "request_id": 10,
+          "success": true,
+          "latency_ms": 42.17659996356815,
+          "inference_ms": 37.0,
+          "error": null
+        },
+        {
+          "request_id": 11,
+          "success": true,
+          "latency_ms": 40.427700034342706,
+          "inference_ms": 35.45,
+          "error": null
+        },
+        {
+          "request_id": 12,
+          "success": true,
+          "latency_ms": 39.564200036693364,
+          "inference_ms": 34.5,
+          "error": null
+        },
+        {
+          "request_id": 13,
+          "success": true,
+          "latency_ms": 40.47759994864464,
+          "inference_ms": 35.5,
+          "error": null
+        },
+        {
+          "request_id": 14,
+          "success": true,
+          "latency_ms": 40.34090001368895,
+          "inference_ms": 35.38,
+          "error": null
+        },
+        {
+          "request_id": 15,
+          "success": true,
+          "latency_ms": 39.69669999787584,
+          "inference_ms": 34.48,
+          "error": null
+        },
+        {
+          "request_id": 16,
+          "success": true,
+          "latency_ms": 52.99060000106692,
+          "inference_ms": 48.21,
+          "error": null
+        },
+        {
+          "request_id": 17,
+          "success": true,
+          "latency_ms": 52.951599995139986,
+          "inference_ms": 35.58,
+          "error": null
+        },
+        {
+          "request_id": 18,
+          "success": true,
+          "latency_ms": 40.29269999591634,
+          "inference_ms": 35.06,
+          "error": null
+        },
+        {
+          "request_id": 19,
+          "success": true,
+          "latency_ms": 42.12230001576245,
+          "inference_ms": 36.77,
+          "error": null
+        },
+        {
+          "request_id": 20,
+          "success": true,
+          "latency_ms": 42.273700004443526,
+          "inference_ms": 37.0,
+          "error": null
+        },
+        {
+          "request_id": 21,
+          "success": true,
+          "latency_ms": 40.273599966894835,
+          "inference_ms": 35.06,
+          "error": null
+        },
+        {
+          "request_id": 22,
+          "success": true,
+          "latency_ms": 39.738799969200045,
+          "inference_ms": 34.5,
+          "error": null
+        },
+        {
+          "request_id": 23,
+          "success": true,
+          "latency_ms": 40.06399994250387,
+          "inference_ms": 34.9,
+          "error": null
+        },
+        {
+          "request_id": 24,
+          "success": true,
+          "latency_ms": 41.04650003137067,
+          "inference_ms": 35.73,
+          "error": null
+        },
+        {
+          "request_id": 25,
+          "success": true,
+          "latency_ms": 41.193599987309426,
+          "inference_ms": 36.05,
+          "error": null
+        },
+        {
+          "request_id": 26,
+          "success": true,
+          "latency_ms": 40.49480002140626,
+          "inference_ms": 33.77,
+          "error": null
+        },
+        {
+          "request_id": 27,
+          "success": true,
+          "latency_ms": 38.805500022135675,
+          "inference_ms": 33.73,
+          "error": null
+        },
+        {
+          "request_id": 28,
+          "success": true,
+          "latency_ms": 39.70249998383224,
+          "inference_ms": 34.85,
+          "error": null
+        },
+        {
+          "request_id": 29,
+          "success": true,
+          "latency_ms": 41.335900023113936,
+          "inference_ms": 34.74,
+          "error": null
+        },
+        {
+          "request_id": 30,
+          "success": true,
+          "latency_ms": 44.364299974404275,
+          "inference_ms": 39.3,
+          "error": null
+        },
+        {
+          "request_id": 31,
+          "success": true,
+          "latency_ms": 43.10120001900941,
+          "inference_ms": 38.19,
+          "error": null
+        },
+        {
+          "request_id": 32,
+          "success": true,
+          "latency_ms": 41.76589997950941,
+          "inference_ms": 36.52,
+          "error": null
+        },
+        {
+          "request_id": 33,
+          "success": true,
+          "latency_ms": 42.045399954076856,
+          "inference_ms": 37.41,
+          "error": null
+        },
+        {
+          "request_id": 34,
+          "success": true,
+          "latency_ms": 39.78560003452003,
+          "inference_ms": 34.39,
+          "error": null
+        },
+        {
+          "request_id": 35,
+          "success": true,
+          "latency_ms": 41.44609998911619,
+          "inference_ms": 36.13,
+          "error": null
+        },
+        {
+          "request_id": 36,
+          "success": true,
+          "latency_ms": 39.421800000127405,
+          "inference_ms": 34.5,
+          "error": null
+        },
+        {
+          "request_id": 37,
+          "success": true,
+          "latency_ms": 41.0919000278227,
+          "inference_ms": 35.91,
+          "error": null
+        },
+        {
+          "request_id": 38,
+          "success": true,
+          "latency_ms": 44.548100035171956,
+          "inference_ms": 38.9,
+          "error": null
+        },
+        {
+          "request_id": 39,
+          "success": true,
+          "latency_ms": 45.10280000977218,
+          "inference_ms": 39.4,
+          "error": null
+        },
+        {
+          "request_id": 40,
+          "success": true,
+          "latency_ms": 42.310699995141476,
+          "inference_ms": 37.62,
+          "error": null
+        },
+        {
+          "request_id": 41,
+          "success": true,
+          "latency_ms": 53.39379998622462,
+          "inference_ms": 48.42,
+          "error": null
+        },
+        {
+          "request_id": 42,
+          "success": true,
+          "latency_ms": 53.42100001871586,
+          "inference_ms": 35.3,
+          "error": null
+        },
+        {
+          "request_id": 43,
+          "success": true,
+          "latency_ms": 40.89960001874715,
+          "inference_ms": 35.83,
+          "error": null
+        },
+        {
+          "request_id": 44,
+          "success": true,
+          "latency_ms": 42.40969999227673,
+          "inference_ms": 37.49,
+          "error": null
+        },
+        {
+          "request_id": 45,
+          "success": true,
+          "latency_ms": 43.98560000117868,
+          "inference_ms": 38.73,
+          "error": null
+        },
+        {
+          "request_id": 46,
+          "success": true,
+          "latency_ms": 40.8682000124827,
+          "inference_ms": 35.79,
+          "error": null
+        },
+        {
+          "request_id": 47,
+          "success": true,
+          "latency_ms": 41.88799997791648,
+          "inference_ms": 37.06,
+          "error": null
+        },
+        {
+          "request_id": 48,
+          "success": true,
+          "latency_ms": 41.15419997833669,
+          "inference_ms": 36.1,
+          "error": null
+        },
+        {
+          "request_id": 49,
+          "success": true,
+          "latency_ms": 36.03110002586618,
+          "inference_ms": 31.49,
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 4,
+        "attempted": 50,
+        "successful": 50,
+        "failed": 0,
+        "elapsed_seconds": 1.022,
+        "successful_requests_per_second": 48.91,
+        "mean_latency_ms": 80.05,
+        "p95_latency_ms": 97.34
+      },
+      "requests": [
+        {
+          "request_id": 0,
+          "success": true,
+          "latency_ms": 81.41089999116957,
+          "inference_ms": 72.64,
+          "error": null
+        },
+        {
+          "request_id": 1,
+          "success": true,
+          "latency_ms": 84.83430003980175,
+          "inference_ms": 75.63,
+          "error": null
+        },
+        {
+          "request_id": 2,
+          "success": true,
+          "latency_ms": 91.51209995616227,
+          "inference_ms": 80.44,
+          "error": null
+        },
+        {
+          "request_id": 3,
+          "success": true,
+          "latency_ms": 97.13089995784685,
+          "inference_ms": 85.26,
+          "error": null
+        },
+        {
+          "request_id": 4,
+          "success": true,
+          "latency_ms": 76.98110002093017,
+          "inference_ms": 66.09,
+          "error": null
+        },
+        {
+          "request_id": 5,
+          "success": true,
+          "latency_ms": 73.4701999463141,
+          "inference_ms": 59.68,
+          "error": null
+        },
+        {
+          "request_id": 6,
+          "success": true,
+          "latency_ms": 70.41039998875931,
+          "inference_ms": 59.01,
+          "error": null
+        },
+        {
+          "request_id": 7,
+          "success": true,
+          "latency_ms": 81.8233999889344,
+          "inference_ms": 58.85,
+          "error": null
+        },
+        {
+          "request_id": 8,
+          "success": true,
+          "latency_ms": 67.77490000240505,
+          "inference_ms": 56.95,
+          "error": null
+        },
+        {
+          "request_id": 9,
+          "success": true,
+          "latency_ms": 65.05219999235123,
+          "inference_ms": 55.23,
+          "error": null
+        },
+        {
+          "request_id": 10,
+          "success": true,
+          "latency_ms": 66.09109998680651,
+          "inference_ms": 57.63,
+          "error": null
+        },
+        {
+          "request_id": 11,
+          "success": true,
+          "latency_ms": 63.57070000376552,
+          "inference_ms": 57.11,
+          "error": null
+        },
+        {
+          "request_id": 12,
+          "success": true,
+          "latency_ms": 70.60219999402761,
+          "inference_ms": 57.63,
+          "error": null
+        },
+        {
+          "request_id": 13,
+          "success": true,
+          "latency_ms": 68.57709999894723,
+          "inference_ms": 56.42,
+          "error": null
+        },
+        {
+          "request_id": 14,
+          "success": true,
+          "latency_ms": 68.01220000488684,
+          "inference_ms": 60.66,
+          "error": null
+        },
+        {
+          "request_id": 15,
+          "success": true,
+          "latency_ms": 63.26580001041293,
+          "inference_ms": 57.22,
+          "error": null
+        },
+        {
+          "request_id": 16,
+          "success": true,
+          "latency_ms": 79.22419998794794,
+          "inference_ms": 69.29,
+          "error": null
+        },
+        {
+          "request_id": 17,
+          "success": true,
+          "latency_ms": 85.04229999380186,
+          "inference_ms": 73.42,
+          "error": null
+        },
+        {
+          "request_id": 18,
+          "success": true,
+          "latency_ms": 83.22430000407621,
+          "inference_ms": 72.13,
+          "error": null
+        },
+        {
+          "request_id": 19,
+          "success": true,
+          "latency_ms": 74.51240002410486,
+          "inference_ms": 67.92,
+          "error": null
+        },
+        {
+          "request_id": 20,
+          "success": true,
+          "latency_ms": 84.03510000789538,
+          "inference_ms": 72.28,
+          "error": null
+        },
+        {
+          "request_id": 21,
+          "success": true,
+          "latency_ms": 87.53410005010664,
+          "inference_ms": 77.25,
+          "error": null
+        },
+        {
+          "request_id": 22,
+          "success": true,
+          "latency_ms": 89.4378999946639,
+          "inference_ms": 80.0,
+          "error": null
+        },
+        {
+          "request_id": 23,
+          "success": true,
+          "latency_ms": 99.99710001284257,
+          "inference_ms": 77.76,
+          "error": null
+        },
+        {
+          "request_id": 24,
+          "success": true,
+          "latency_ms": 82.79719995334744,
+          "inference_ms": 74.15,
+          "error": null
+        },
+        {
+          "request_id": 25,
+          "success": true,
+          "latency_ms": 79.83389997389168,
+          "inference_ms": 71.1,
+          "error": null
+        },
+        {
+          "request_id": 26,
+          "success": true,
+          "latency_ms": 79.47419997071847,
+          "inference_ms": 70.78,
+          "error": null
+        },
+        {
+          "request_id": 27,
+          "success": true,
+          "latency_ms": 78.61679996130988,
+          "inference_ms": 72.15,
+          "error": null
+        },
+        {
+          "request_id": 28,
+          "success": true,
+          "latency_ms": 91.67620004154742,
+          "inference_ms": 80.53,
+          "error": null
+        },
+        {
+          "request_id": 29,
+          "success": true,
+          "latency_ms": 91.0509999957867,
+          "inference_ms": 80.39,
+          "error": null
+        },
+        {
+          "request_id": 30,
+          "success": true,
+          "latency_ms": 86.11189998919144,
+          "inference_ms": 78.19,
+          "error": null
+        },
+        {
+          "request_id": 31,
+          "success": true,
+          "latency_ms": 77.51490001101047,
+          "inference_ms": 70.0,
+          "error": null
+        },
+        {
+          "request_id": 32,
+          "success": true,
+          "latency_ms": 72.73849996272475,
+          "inference_ms": 60.82,
+          "error": null
+        },
+        {
+          "request_id": 33,
+          "success": true,
+          "latency_ms": 75.18019998678938,
+          "inference_ms": 62.88,
+          "error": null
+        },
+        {
+          "request_id": 34,
+          "success": true,
+          "latency_ms": 72.68850004766136,
+          "inference_ms": 61.98,
+          "error": null
+        },
+        {
+          "request_id": 35,
+          "success": true,
+          "latency_ms": 83.66250002291054,
+          "inference_ms": 65.87,
+          "error": null
+        },
+        {
+          "request_id": 36,
+          "success": true,
+          "latency_ms": 76.58320001792163,
+          "inference_ms": 66.57,
+          "error": null
+        },
+        {
+          "request_id": 37,
+          "success": true,
+          "latency_ms": 81.12990000518039,
+          "inference_ms": 71.35,
+          "error": null
+        },
+        {
+          "request_id": 38,
+          "success": true,
+          "latency_ms": 83.05349998408929,
+          "inference_ms": 73.06,
+          "error": null
+        },
+        {
+          "request_id": 39,
+          "success": true,
+          "latency_ms": 75.39909996557981,
+          "inference_ms": 67.14,
+          "error": null
+        },
+        {
+          "request_id": 40,
+          "success": true,
+          "latency_ms": 79.2228999780491,
+          "inference_ms": 71.76,
+          "error": null
+        },
+        {
+          "request_id": 41,
+          "success": true,
+          "latency_ms": 84.0639000525698,
+          "inference_ms": 71.94,
+          "error": null
+        },
+        {
+          "request_id": 42,
+          "success": true,
+          "latency_ms": 90.12860001530498,
+          "inference_ms": 73.19,
+          "error": null
+        },
+        {
+          "request_id": 43,
+          "success": true,
+          "latency_ms": 81.12299995264038,
+          "inference_ms": 73.23,
+          "error": null
+        },
+        {
+          "request_id": 44,
+          "success": true,
+          "latency_ms": 77.16129999607801,
+          "inference_ms": 71.24,
+          "error": null
+        },
+        {
+          "request_id": 45,
+          "success": true,
+          "latency_ms": 97.33649995177984,
+          "inference_ms": 85.47,
+          "error": null
+        },
+        {
+          "request_id": 46,
+          "success": true,
+          "latency_ms": 114.66189997736365,
+          "inference_ms": 91.02,
+          "error": null
+        },
+        {
+          "request_id": 47,
+          "success": true,
+          "latency_ms": 93.18780002649873,
+          "inference_ms": 83.86,
+          "error": null
+        },
+        {
+          "request_id": 48,
+          "success": true,
+          "latency_ms": 76.81769999908283,
+          "inference_ms": 70.38,
+          "error": null
+        },
+        {
+          "request_id": 49,
+          "success": true,
+          "latency_ms": 47.832800017204136,
+          "inference_ms": 39.71,
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 8,
+        "attempted": 50,
+        "successful": 50,
+        "failed": 0,
+        "elapsed_seconds": 0.947,
+        "successful_requests_per_second": 52.81,
+        "mean_latency_ms": 146.64,
+        "p95_latency_ms": 176.79
+      },
+      "requests": [
+        {
+          "request_id": 0,
+          "success": true,
+          "latency_ms": 160.41660000337288,
+          "inference_ms": 130.35,
+          "error": null
+        },
+        {
+          "request_id": 1,
+          "success": true,
+          "latency_ms": 163.71280001476407,
+          "inference_ms": 136.08,
+          "error": null
+        },
+        {
+          "request_id": 2,
+          "success": true,
+          "latency_ms": 155.3239999921061,
+          "inference_ms": 125.98,
+          "error": null
+        },
+        {
+          "request_id": 3,
+          "success": true,
+          "latency_ms": 163.006899994798,
+          "inference_ms": 126.4,
+          "error": null
+        },
+        {
+          "request_id": 4,
+          "success": true,
+          "latency_ms": 173.6795000033453,
+          "inference_ms": 132.4,
+          "error": null
+        },
+        {
+          "request_id": 5,
+          "success": true,
+          "latency_ms": 176.78740003611892,
+          "inference_ms": 133.95,
+          "error": null
+        },
+        {
+          "request_id": 6,
+          "success": true,
+          "latency_ms": 177.361199981533,
+          "inference_ms": 129.36,
+          "error": null
+        },
+        {
+          "request_id": 7,
+          "success": true,
+          "latency_ms": 177.61650000466034,
+          "inference_ms": 129.54,
+          "error": null
+        },
+        {
+          "request_id": 8,
+          "success": true,
+          "latency_ms": 131.59210002049804,
+          "inference_ms": 104.99,
+          "error": null
+        },
+        {
+          "request_id": 9,
+          "success": true,
+          "latency_ms": 138.40860000345856,
+          "inference_ms": 111.8,
+          "error": null
+        },
+        {
+          "request_id": 10,
+          "success": true,
+          "latency_ms": 145.07769996998832,
+          "inference_ms": 117.76,
+          "error": null
+        },
+        {
+          "request_id": 11,
+          "success": true,
+          "latency_ms": 161.45110002253205,
+          "inference_ms": 125.93,
+          "error": null
+        },
+        {
+          "request_id": 12,
+          "success": true,
+          "latency_ms": 150.5462999921292,
+          "inference_ms": 120.41,
+          "error": null
+        },
+        {
+          "request_id": 13,
+          "success": true,
+          "latency_ms": 146.25340001657605,
+          "inference_ms": 120.98,
+          "error": null
+        },
+        {
+          "request_id": 14,
+          "success": true,
+          "latency_ms": 144.09339998383075,
+          "inference_ms": 119.31,
+          "error": null
+        },
+        {
+          "request_id": 15,
+          "success": true,
+          "latency_ms": 139.6631999523379,
+          "inference_ms": 115.86,
+          "error": null
+        },
+        {
+          "request_id": 16,
+          "success": true,
+          "latency_ms": 120.1848000055179,
+          "inference_ms": 105.67,
+          "error": null
+        },
+        {
+          "request_id": 17,
+          "success": true,
+          "latency_ms": 121.39580002985895,
+          "inference_ms": 103.99,
+          "error": null
+        },
+        {
+          "request_id": 18,
+          "success": true,
+          "latency_ms": 137.442400038708,
+          "inference_ms": 115.09,
+          "error": null
+        },
+        {
+          "request_id": 19,
+          "success": true,
+          "latency_ms": 128.91909998143092,
+          "inference_ms": 110.68,
+          "error": null
+        },
+        {
+          "request_id": 20,
+          "success": true,
+          "latency_ms": 151.02260001003742,
+          "inference_ms": 123.31,
+          "error": null
+        },
+        {
+          "request_id": 21,
+          "success": true,
+          "latency_ms": 138.2193000172265,
+          "inference_ms": 113.64,
+          "error": null
+        },
+        {
+          "request_id": 22,
+          "success": true,
+          "latency_ms": 148.1814999715425,
+          "inference_ms": 119.7,
+          "error": null
+        },
+        {
+          "request_id": 23,
+          "success": true,
+          "latency_ms": 142.35780003946275,
+          "inference_ms": 118.99,
+          "error": null
+        },
+        {
+          "request_id": 24,
+          "success": true,
+          "latency_ms": 147.56720000877976,
+          "inference_ms": 131.09,
+          "error": null
+        },
+        {
+          "request_id": 25,
+          "success": true,
+          "latency_ms": 141.46680000703782,
+          "inference_ms": 130.78,
+          "error": null
+        },
+        {
+          "request_id": 26,
+          "success": true,
+          "latency_ms": 143.28600000590086,
+          "inference_ms": 127.38,
+          "error": null
+        },
+        {
+          "request_id": 27,
+          "success": true,
+          "latency_ms": 143.57319998089224,
+          "inference_ms": 123.84,
+          "error": null
+        },
+        {
+          "request_id": 28,
+          "success": true,
+          "latency_ms": 153.99999998044223,
+          "inference_ms": 127.22,
+          "error": null
+        },
+        {
+          "request_id": 29,
+          "success": true,
+          "latency_ms": 153.80139998160303,
+          "inference_ms": 131.44,
+          "error": null
+        },
+        {
+          "request_id": 30,
+          "success": true,
+          "latency_ms": 160.493100003805,
+          "inference_ms": 140.07,
+          "error": null
+        },
+        {
+          "request_id": 31,
+          "success": true,
+          "latency_ms": 157.6469999854453,
+          "inference_ms": 134.52,
+          "error": null
+        },
+        {
+          "request_id": 32,
+          "success": true,
+          "latency_ms": 141.46890002302825,
+          "inference_ms": 128.02,
+          "error": null
+        },
+        {
+          "request_id": 33,
+          "success": true,
+          "latency_ms": 130.8945000055246,
+          "inference_ms": 120.19,
+          "error": null
+        },
+        {
+          "request_id": 34,
+          "success": true,
+          "latency_ms": 137.77989998925477,
+          "inference_ms": 122.09,
+          "error": null
+        },
+        {
+          "request_id": 35,
+          "success": true,
+          "latency_ms": 139.67040000716224,
+          "inference_ms": 127.37,
+          "error": null
+        },
+        {
+          "request_id": 36,
+          "success": true,
+          "latency_ms": 158.05889997864142,
+          "inference_ms": 130.93,
+          "error": null
+        },
+        {
+          "request_id": 37,
+          "success": true,
+          "latency_ms": 143.55899998918176,
+          "inference_ms": 120.5,
+          "error": null
+        },
+        {
+          "request_id": 38,
+          "success": true,
+          "latency_ms": 149.38469999469817,
+          "inference_ms": 128.99,
+          "error": null
+        },
+        {
+          "request_id": 39,
+          "success": true,
+          "latency_ms": 143.5168000170961,
+          "inference_ms": 124.0,
+          "error": null
+        },
+        {
+          "request_id": 40,
+          "success": true,
+          "latency_ms": 162.35820000292733,
+          "inference_ms": 144.79,
+          "error": null
+        },
+        {
+          "request_id": 41,
+          "success": true,
+          "latency_ms": 153.36280001793057,
+          "inference_ms": 140.89,
+          "error": null
+        },
+        {
+          "request_id": 42,
+          "success": true,
+          "latency_ms": 161.19569999864325,
+          "inference_ms": 146.42,
+          "error": null
+        },
+        {
+          "request_id": 43,
+          "success": true,
+          "latency_ms": 146.5067000244744,
+          "inference_ms": 135.91,
+          "error": null
+        },
+        {
+          "request_id": 44,
+          "success": true,
+          "latency_ms": 146.90340001834556,
+          "inference_ms": 127.38,
+          "error": null
+        },
+        {
+          "request_id": 45,
+          "success": true,
+          "latency_ms": 145.76510002370924,
+          "inference_ms": 127.44,
+          "error": null
+        },
+        {
+          "request_id": 46,
+          "success": true,
+          "latency_ms": 148.97919999202713,
+          "inference_ms": 118.33,
+          "error": null
+        },
+        {
+          "request_id": 47,
+          "success": true,
+          "latency_ms": 144.0502000041306,
+          "inference_ms": 116.71,
+          "error": null
+        },
+        {
+          "request_id": 48,
+          "success": true,
+          "latency_ms": 93.71109999483451,
+          "inference_ms": 80.06,
+          "error": null
+        },
+        {
+          "request_id": 49,
+          "success": true,
+          "latency_ms": 90.46879998641089,
+          "inference_ms": 82.17,
+          "error": null
+        }
+      ]
+    }
+  ]
+}
