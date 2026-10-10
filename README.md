@@ -199,3 +199,46 @@ Increasing concurrency from 4 to 8 improved throughput by approximately 8%, whil
 Resource measurements cover the API process only. The benchmark window includes warm-up and all concurrency levels; CPU usage is an average across that window, not a reading for each concurrency level. Memory readings are snapshots, not peak memory measurements.
 
 These short tests on one computer do not establish production capacity, sustained reliability, or a CPU bottleneck.
+
+## Docker deployment
+
+The CPU inference API was built and tested in a Linux Docker container
+using Docker Desktop on Windows.
+
+### Build and start
+
+Run these commands from the project folder:
+
+```powershell
+docker build -t ai-inference-lab:v0.1 .
+docker run -d --name ai-inference-api -p 127.0.0.1:8001:8000 ai-inference-lab:v0.1
+docker logs -f ai-inference-api
+```
+
+Wait for `Application startup complete`.
+Press Ctrl+C to exit the log view; the container keeps running.
+
+The API is available at http://localhost:8001/docs.
+The model downloads on first startup and is cached inside the container.
+Creating a replacement container requires another download.
+
+### Validate the container
+
+```powershell
+.\.venv-repro\Scripts\python.exe -c "import validate_api; validate_api.BASE_URL = 'http://127.0.0.1:8001'; validate_api.main()"
+```
+
+Verified on October 9, 2026: **10/10 checks passed**.
+
+Checks cover health, readiness, positive and negative predictions,
+response fields, and rejection of six invalid input cases.
+They verify API behavior, not overall model accuracy or production capacity.
+
+### Stop and restart
+
+```powershell
+docker stop ai-inference-api
+docker start ai-inference-api
+```
+
+After restarting, wait for the model to load before sending requests.
