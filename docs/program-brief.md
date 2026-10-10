@@ -1,8 +1,8 @@
 ﻿# AI Inference Infrastructure Lab - Program Brief
 
 Owner: Edward Amartey
-Status: Local CPU prototype
-Last updated: October 7, 2026
+Status: Local CPU API and Docker validation complete; manual recovery exercise verified
+Last updated: October 9, 2026
 
 ## Problem and intended users
 
@@ -101,15 +101,14 @@ These short, fixed-input tests on one Windows machine do not
 establish production capacity or identify the bottleneck.
 
 ## Roadmap and dependencies
-
-| Milestone | Deliverable | Dependency | Exit condition |
+| Milestone | Deliverable | Dependency | Status and remaining work |
 |---|---|---|---|
-| M1: Local baseline | API, benchmarks, and findings | Python environment and model download | Completed local demonstrations recorded |
-| M2: Reproducibility | Setup guide and automated validation | M1 | Fresh checkout passes documented checks |
-| M3: Operational evidence | Readiness, CPU/memory measurements, longer varied-input tests | M2 | Results support a documented operating decision |
-| M4: Packaging | Container and rollback procedure | M2 and M3 | Container passes API and readiness checks |
-| M5: Cloud evaluation | Deployment design and cost estimate | M4 | Resource choice and pilot criteria documented |
-| M6: Generative AI extension | Text-generation service and workload-specific benchmarks | M5 planning | Model quality and serving performance evaluated |
+| M1: Local baseline | API, benchmarks, and findings | Python environment and model download | Complete: local demonstrations and results recorded |
+| M2: Reproducibility | Setup guide and automated validation | M1 | Fresh virtual environment and 10 API checks verified; fresh checkout verification pending |
+| M3: Operational evidence | Readiness, CPU/memory measurements, longer varied-input tests | M2 | Readiness and initial CPU/memory sample verified; longer varied-input tests pending |
+| M4: Packaging | Container and manual recovery procedure | M2 and M3 | Docker API checks, manual restart, and recovery from a failed launch verified; rollback between application versions untested |
+| M5: Cloud evaluation | Deployment design and cost estimate | M4 | Planned: resource choice, cost estimate, and pilot acceptance criteria ||
+| M6: Generative AI extension | Text-generation model serving and workload benchmarks | Validated inference platform and suitable compute resources | Planned: select a generative model, define evaluation criteria, and measure latency, throughput, and resource use |
 
 ## Risks and mitigations
 
@@ -153,9 +152,15 @@ Before a cloud pilot:
 - Verify monitoring and rollback in the target environment.
 
 Rollback approach:
-Stop the candidate deployment and restart the previous tested
-commit or image. Verify readiness and run API smoke checks.
-The rollback procedure has not yet been implemented or tested.
+A local manual recovery exercise was verified on October 9, 2026.
+A candidate container failed to start because its launch command referenced
+a missing module. A replacement container started successfully using the
+verified image tagged ai-inference-lab:rollback-v0.1 and its default launch
+command. All 10 API validation checks passed on port 8002.
+
+This exercise used the same application image. Rollback between different
+application versions, automatic failover, traffic switching, and recovery
+time measurement remain untested.
 
 ## Evidence references
 
