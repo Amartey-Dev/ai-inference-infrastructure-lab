@@ -242,3 +242,11 @@ docker start ai-inference-api
 ```
 
 After restarting, wait for the model to load before sending requests.
+### Restart validation
+
+On October 9, 2026, the existing container was manually restarted with
+`docker restart ai-inference-api`. After startup, `/ready` returned
+`ready` with `model_loaded: true`, and all 10 API validation checks passed again.
+
+This verifies functionality after a manual restart of the same container.
+Crash recovery, replacement-container recovery, and recovery time were not measured.
