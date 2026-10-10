@@ -250,3 +250,20 @@ On October 9, 2026, the existing container was manually restarted with
 
 This verifies functionality after a manual restart of the same container.
 Crash recovery, replacement-container recovery, and recovery time were not measured.
+### Manual rollback exercise
+
+Verified on October 9, 2026:
+
+1. Tagged the working image as `ai-inference-lab:rollback-v0.1`
+   and confirmed its image ID matched `ai-inference-lab:v0.1`.
+2. Simulated a startup configuration failure on port 8002 by overriding
+   the launch command to reference `missing_module:app`.
+3. Confirmed the candidate logged an import error and exited with code 3.
+4. Started a new container, `ai-inference-rollback`, on port 8002
+   using the verified rollback image and its default launch command.
+5. Ran the API validation script against port 8002: **10/10 checks passed**.
+
+This exercise verifies manual recovery from an invalid launch command.
+The candidate and rollback used the same image; no application-version
+rollback, automatic failover, traffic switching, or recovery-time
+measurement was performed. The original API remained on port 8001.
