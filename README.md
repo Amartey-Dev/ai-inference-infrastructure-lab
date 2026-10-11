@@ -267,3 +267,17 @@ This exercise verifies manual recovery from an invalid launch command.
 The candidate and rollback used the same image; no application-version
 rollback, automatic failover, traffic switching, or recovery-time
 measurement was performed. The original API remained on port 8001.
+
+## Fresh-clone validation — October 10, 2026
+
+Cloned the GitHub repository into a separate folder and created a new
+Python 3.13.3 virtual environment. Installed the dependencies and ran
+`pip check`, which reported no broken requirements.
+
+Started the API on port 8003 and ran `validate_api.py` from the fresh
+clone. All 10 checks passed, covering health, readiness, prediction
+response fields, and rejection of invalid inputs.
+
+Scope: verified on the same Windows computer. This does not establish
+setup on another machine, an uncached model download, or overall model
+accuracy.
