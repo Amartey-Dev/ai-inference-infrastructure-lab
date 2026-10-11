@@ -281,3 +281,26 @@ response fields, and rejection of invalid inputs.
 Scope: verified on the same Windows computer. This does not establish
 setup on another machine, an uncached model download, or overall model
 accuracy.
+## Varied-input benchmark — October 10, 2026
+
+Ran `benchmark_varied.py` against the local CPU API on port 8003.
+Four client workers cycled through three synthetic texts for a
+60-second request-start window, then waited for outstanding requests.
+Nine sequential warm-up requests were excluded.
+
+Completed 1,150 requests with zero failures. Throughput, including
+the final drain period, was 19.13 successful requests per second.
+
+| Input | Successful | Failed | Mean latency (ms) | p95 latency (ms) |
+|---|---:|---:|---:|---:|
+| Short | 384 | 0 | 119.28 | 144.71 |
+| Medium | 383 | 0 | 204.63 | 247.98 |
+| Long | 383 | 0 | 302.86 | 375.52 |
+
+Longer inputs had higher client round-trip latency in this mixed
+workload. These results describe one local run with three repeated
+texts; they do not establish production capacity, long-term stability,
+or model accuracy. Character counts are not token counts, and the API
+truncates model input to 512 tokens.
+
+[Raw results](results/varied_20261011T032335889635Z.json)

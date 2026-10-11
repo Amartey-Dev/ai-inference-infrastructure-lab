@@ -105,7 +105,7 @@ establish production capacity or identify the bottleneck.
 |---|---|---|---|
 | M1: Local baseline | API, benchmarks, and findings | Python environment and model download | Complete: local demonstrations and results recorded |
 | M2: Reproducibility | Setup guide and automated validation | M1 | Complete: fresh GitHub clone and new Python 3.13.3 environment verified on the same Windows computer; pip check passed and all 10 API checks passed on port 8003. |
-| M3: Operational evidence | Readiness, CPU/memory measurements, longer varied-input tests | M2 | Readiness and initial CPU/memory sample verified; longer varied-input tests pending |
+| M3: Operational evidence | Readiness, CPU/memory measurements, longer varied-input tests | M2 | Complete for local scope: readiness and initial CPU/memory sample verified; 60-second mixed-input benchmark at concurrency 4 completed 1,150 requests with zero failures. Long-term stability and production capacity remain unverified. |
 | M4: Packaging | Container and manual recovery procedure | M2 and M3 | Docker API checks, manual restart, and recovery from a failed launch verified; rollback between application versions untested |
 | M5: Cloud evaluation | Deployment design and cost estimate | M4 | Planned: resource choice, cost estimate, and pilot acceptance criteria ||
 | M6: Generative AI extension | Text-generation model serving and workload benchmarks | Validated inference platform and suitable compute resources | Planned: select a generative model, define evaluation criteria, and measure latency, throughput, and resource use |
